@@ -120,26 +120,8 @@ img { display: block; max-width: 100%; }
   display: block;
   width: 52px;
   height: 36px;
-  position: relative;
   flex-shrink: 0;
-}
-.nav-logo::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: white;
-  -webkit-mask-image: url('Logo.png'), linear-gradient(white, white);
-  mask-image: url('Logo.png'), linear-gradient(white, white);
-  -webkit-mask-size: contain, cover;
-  mask-size: contain, cover;
-  -webkit-mask-repeat: no-repeat, no-repeat;
-  mask-repeat: no-repeat, no-repeat;
-  -webkit-mask-position: center, center;
-  mask-position: center, center;
-  -webkit-mask-mode: luminance, luminance;
-  mask-mode: luminance, luminance;
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  background: url('Roscoe Bellamy-01.png') center/contain no-repeat;
 }
 .nav-brand {
   font-family: var(--font-display);
@@ -649,25 +631,7 @@ img { display: block; max-width: 100%; }
 .footer-logo {
   width: 44px;
   height: 30px;
-  position: relative;
-}
-.footer-logo::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: white;
-  -webkit-mask-image: url('Logo.png'), linear-gradient(white, white);
-  mask-image: url('Logo.png'), linear-gradient(white, white);
-  -webkit-mask-size: contain, cover;
-  mask-size: contain, cover;
-  -webkit-mask-repeat: no-repeat, no-repeat;
-  mask-repeat: no-repeat, no-repeat;
-  -webkit-mask-position: center, center;
-  mask-position: center, center;
-  -webkit-mask-mode: luminance, luminance;
-  mask-mode: luminance, luminance;
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  background: url('Roscoe Bellamy-01.png') center/contain no-repeat;
 }
 .footer-links {
   display: flex;
