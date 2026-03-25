@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Roscoe Bellamy — Pro Pickleball Athlete</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=8" />
+  <style>
+
+    /* ── PAGE HERO ──────────────────────────────────────────── */
+    .about-hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+    .about-hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .about-hero-bg img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+    }
+    .about-hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to top, var(--bg) 0%, rgba(5,10,22,.55) 40%, rgba(5,10,22,.1) 100%),
+        linear-gradient(to right, rgba(5,10,22,.5) 0%, transparent 60%);
+    }
+    .about-hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 64px 72px;
+      max-width: 680px;
+    }
+    .about-hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .about-hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px; height: 1px;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .about-hero-name {
+      font-family: var(--font-display);
+      font-size: clamp(72px, 11vw, 148px);
+      line-height: .85;
+      letter-spacing: .01em;
+      color: var(--white);
+      margin-bottom: 32px;
+    }
+    .about-hero-pills {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .pill {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 8px 16px;
+      background: rgba(255,255,255,.05);
+    }
+    .pill.gold {
+      color: var(--gold);
+      border-color: rgba(196,151,58,.4);
+      background: rgba(196,151,58,.08);
+    }
+
+    /* ── STATS BAR ──────────────────────────────────────────── */
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: var(--surface);
+      border-bottom: 1px solid var(--line2);
+    }
+    .about-stat {
+      padding: 36px 24px;
+      text-align: center;
+      border-right: 1px solid var(--line2);
+    }
+    .about-stat:last-child { border-right: none; }
+    .about-stat-num {
+      font-family: var(--font-display);
+      font-size: 44px;
+      line-height: 1;
+      color: var(--white);
+      letter-spacing: .04em;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .about-stat-num.gold { color: var(--gold); }
+    .about-stat-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+
+    /* ── BIO SPLIT ROWS ─────────────────────────────────────── */
+    .bio-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 420px;
+      border-bottom: 1px solid var(--line2);
+      overflow: hidden;
+    }
+    .bio-split.reverse .bio-text { order: 2; }
+    .bio-split.reverse .bio-photo { order: 1; }
+    .bio-text {
+      padding: 64px 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid var(--line2);
+    }
+    .bio-split.reverse .bio-text { border-right: none; border-left: 1px solid var(--line2); }
+    .bio-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--blue-lt);
+      margin-bottom: 14px;
+    }
+    .bio-heading {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 3.5vw, 52px);
+      letter-spacing: .03em;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .bio-body {
+      font-size: 15px;
+      font-weight: 300;
+      color: rgba(237,243,255,.72);
+      line-height: 1.9;
+    }
+    .bio-photo {
+      position: relative;
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .bio-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform .8s ease;
+    }
+    .bio-split:hover .bio-photo img { transform: scale(1.03); }
+
+    /* ── PLATFORM CARDS ─────────────────────────────────────── */
+    .off-court-section {
+      padding: 80px 64px;
+      border-bottom: 1px solid var(--line2);
+      background: var(--off-bg);
+    }
+    .off-court-header {
+      margin-bottom: 48px;
+    }
+    .off-court-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    .platform-card {
+      background: var(--surface);
+      padding: 44px 40px;
+      border: 1px solid var(--line2);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: border-color .3s, background .3s;
+    }
+    .platform-card:hover {
+      border-color: rgba(74,138,244,.35);
+      background: rgba(74,138,244,.04);
+    }
+    .platform-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--blue-lt);
+      margin-bottom: 10px;
+    }
+    .platform-title {
+      font-family: var(--font-display);
+      font-size: 32px;
+      letter-spacing: .04em;
+      color: var(--white);
+      line-height: 1.05;
+      margin-bottom: 10px;
+    }
+    .platform-stat {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .platform-desc {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--dim);
+      line-height: 1.8;
+    }
+    .platform-link-row {
+      margin-top: 28px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--white);
+      opacity: .45;
+      transition: opacity .2s, gap .2s;
+    }
+    .platform-card:hover .platform-link-row { opacity: 1; gap: 16px; }
+
+    /* ── QUOTE ──────────────────────────────────────────────── */
+    .quote-break {
+      padding: 100px 64px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line2);
+    }
+    .quote-break::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(74,138,244,.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .quote-mark {
+      font-family: var(--font-display);
+      font-size: 100px;
+      line-height: .5;
+      color: var(--blue-lt);
+      opacity: .15;
+      display: block;
+      margin-bottom: 24px;
+    }
+    .quote-text {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3.5vw, 50px);
+      line-height: 1.15;
+      letter-spacing: .02em;
+      color: var(--white);
+      max-width: 760px;
+      margin: 0 auto 28px;
+    }
+    .quote-attribution {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+
+    /* ── CTA ────────────────────────────────────────────────── */
+    .about-cta {
+      padding: 110px 64px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-cta::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(74,138,244,.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .about-cta-body {
+      font-size: 16px;
+      font-weight: 300;
+      color: rgba(237,243,255,.6);
+      line-height: 1.8;
+      max-width: 420px;
+      margin: 0 auto 40px;
+    }
+    .cta-button-row {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ── MOBILE ─────────────────────────────────────────────── */
+    @media (max-width: 768px) {
+
+      .about-hero { min-height: 100svh; }
+      .about-hero-bg img { object-position: 60% 15%; }
+      .about-hero-content { padding: 0 24px 64px; max-width: 100%; }
+      .about-hero-name { font-size: clamp(64px, 18vw, 96px); }
+
+      .about-stats { grid-template-columns: repeat(2, 1fr); }
+      .about-stat { padding: 28px 16px; }
+      .about-stat-num { font-size: 36px; }
+      .about-stat:nth-child(2) { border-right: none; }
+      .about-stat:nth-child(3),
+      .about-stat:nth-child(4) { border-top: 1px solid var(--line2); }
+      .about-stat:nth-child(4) { border-right: none; }
+
+      .bio-split { grid-template-columns: 1fr; height: auto; overflow: visible; }
+      .bio-split.reverse .bio-text { order: 2; }
+      .bio-split.reverse .bio-photo { order: 1; }
+      .bio-text { padding: 44px 24px; border-right: none !important; border-left: none !important; }
+      .bio-photo { height: 300px; order: 1 !important; }
+      .bio-split .bio-text { order: 2; }
+
+      .off-court-section { padding: 60px 24px; }
+      .off-court-grid { grid-template-columns: 1fr; }
+      .platform-card { padding: 32px 24px; }
+
+      .quote-break { padding: 72px 24px; }
+      .quote-mark { font-size: 72px; }
+
+      .about-cta { padding: 80px 24px; }
+      .cta-button-row { flex-direction: column; align-items: center; }
+      .cta-button-row .btn-primary,
+      .cta-button-row .btn-ghost { width: 100%; text-align: center; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled">
+    <a href="index.html" class="nav-logo" aria-label="Roscoe Bellamy"></a>
+    <ul class="nav-links">
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="content.html">Content</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="index.html#collective" class="nav-cta">Join The Collective</a></li>
+    </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <ul class="mobile-nav" id="mobile-nav">
+    <li><a href="about.html">About</a></li>
+    <li><a href="content.html">Content</a></li>
+    <li><a href="partners.html">Partners</a></li>
+    <li><a href="index.html#collective" class="nav-cta">Join The Collective</a></li>
+  </ul>
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section class="about-hero">
+    <div class="about-hero-bg">
+      <img src="Trophy above head.JPG"
+           alt="Roscoe Bellamy — PPA Gold Medal" />
+    </div>
+    <div class="about-hero-content">
+      <p class="about-hero-eyebrow">Professional Pickleball Athlete</p>
+      <h1 class="about-hero-name">
+        ROSCOE<br>BELLAMY
+      </h1>
+      <div class="about-hero-pills">
+        <span class="pill gold">PPA Gold Medalist</span>
+        <span class="pill">Top 6 in the World</span>
+        <span class="pill">One of Pickleball's Most Recognizable Personalities</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS ──────────────────────────────────────────────── -->
+  <div class="about-stats">
+    <div class="about-stat">
+      <span class="about-stat-num gold">6</span>
+      <span class="about-stat-label">PPA Medals</span>
+    </div>
+    <div class="about-stat">
+      <span class="about-stat-num">#6</span>
+      <span class="about-stat-label">World Ranking</span>
+    </div>
+    <div class="about-stat">
+      <span class="about-stat-num">25M+</span>
+      <span class="about-stat-label">Podcast Views</span>
+    </div>
+    <div class="about-stat">
+      <span class="about-stat-num">2M+</span>
+      <span class="about-stat-label">YouTube / Month</span>
+    </div>
+  </div>
+
+  <!-- ── BIO ROW 1: On The Court ────────────────────────────── -->
+  <div class="bio-split">
+    <div class="bio-text">
+      <p class="bio-label">On The Court</p>
+      <h2 class="bio-heading">TOP 6<br>IN THE WORLD</h2>
+      <p class="bio-body">
+        A Los Angeles native, Roscoe was the No. 1 junior tennis player in the country before competing at UCLA. Since transitioning to pickleball in 2023, he has quickly risen to the top of the game — winning his first PPA Gold Medal at the end of 2025 and solidifying himself as a top six player in the world.
+      </p>
+    </div>
+    <div class="bio-photo">
+      <img src="Pumpoed up.JPG" alt="Roscoe Bellamy fist pump on court" />
+    </div>
+  </div>
+
+  <!-- ── BIO ROW 2: Lifestyle ────────────────────────────────── -->
+  <div class="bio-split reverse">
+    <div class="bio-photo">
+      <img src="DSCF6666.JPG" alt="Roscoe Bellamy lifestyle" style="object-position: center 25%;" />
+    </div>
+    <div class="bio-text">
+      <p class="bio-label">Lifestyle</p>
+      <h2 class="bio-heading">BEYOND<br>THE GAME</h2>
+      <p class="bio-body">
+        Roscoe is as active off the court as he is on it. From competing on ESPN's Pickleball Slam alongside Andre Agassi and Andy Roddick, to playing at Necker Island and exclusive celebrity pickleball events around the world — he's become one of the key figures helping bridge the gap between professional pickleball and mainstream celebrity culture.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── BIO ROW 3: The Podcast ─────────────────────────────── -->
+  <div class="bio-split">
+    <div class="bio-text">
+      <p class="bio-label">The Pickleballers Podcast</p>
+      <h2 class="bio-heading">25M+<br>VIEWS</h2>
+      <p class="bio-body">
+        Co-hosted with The Kitchen Pickleball and picked up by PickleballTV after two seasons, the Pickleballers podcast is the most-watched pickleball show in the world. Guests have included Andre Agassi, Drew Brees, Ben Johns, Terrell Owens, Anna Leigh Waters, and John Mackey — with new episodes reaching audiences across YouTube, Amazon Prime, and PickleballTV.
+      </p>
+    </div>
+    <div class="bio-photo">
+      <img src="https://img.youtube.com/vi/9wklRjjipTA/maxresdefault.jpg"
+           alt="Pickleballers Podcast — Andre Agassi Episode" />
+    </div>
+  </div>
+
+  <!-- ── BIO ROW 4: The Collective ─────────────────────────── -->
+  <div class="bio-split reverse">
+    <div class="bio-photo" id="collective-photo">
+      <img src="99bf817c-586a-417a-a8d0-92c48594fbf5.jpg"
+           alt="The Pickleball Collective — Community Group" />
+    </div>
+    <div class="bio-text">
+      <p class="bio-label">The Pickleball Collective</p>
+      <h2 class="bio-heading">100+<br>MEMBERS</h2>
+      <p class="bio-body">
+        Roscoe's mission is bigger than his own results. He founded The Pickleball Collective — an instructional community with over 100 members where he has created curriculum and systems to help players improve, learn more about the sport, and come together as a community. It's the direct line between a Top 6 pro and the players who want to reach the next level.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── OFF THE COURT PLATFORM CARDS ───────────────────────── -->
+  <section class="off-court-section">
+    <div class="off-court-header">
+      <p class="eyebrow">Media &amp; Community</p>
+      <h2 class="section-title" style="font-size:clamp(38px,4vw,58px);margin-bottom:0;">
+        THE PLATFORM
+      </h2>
+    </div>
+    <div class="off-court-grid">
+
+      <a href="content.html" class="platform-card">
+        <div class="platform-label">Podcast</div>
+        <div class="platform-title">THE PICKLE&shy;BALLERS</div>
+        <div class="platform-stat">25M+ Views · #1 Pickleball Podcast</div>
+        <p class="platform-desc">
+          Co-hosted with The Kitchen Pickleball, picked up by PickleballTV after two seasons. Guests include Andre Agassi, Drew Brees, Ben Johns, Terrell Owens, and John Mackey.
+        </p>
+        <div class="platform-link-row">Listen to Episodes <span>→</span></div>
+      </a>
+
+      <a href="https://youtube.com/@roscoebellamy" target="_blank" rel="noopener" class="platform-card">
+        <div class="platform-label">YouTube</div>
+        <div class="platform-title">COACHING<br>CONTENT</div>
+        <div class="platform-stat">2M+ Views / Month</div>
+        <p class="platform-desc">
+          Instructional breakdowns, strategy analysis, and training content designed to help players at every level add real weapons to their game.
+        </p>
+        <div class="platform-link-row">View Channel <span>→</span></div>
+      </a>
+
+      <a href="index.html#collective" class="platform-card">
+        <div class="platform-label">Community</div>
+        <div class="platform-title">THE PICKLE&shy;BALL COLLECTIVE</div>
+        <div class="platform-stat">100+ Members · Instructional Community</div>
+        <p class="platform-desc">
+          A structured community with curriculum and systems built by Roscoe to help members improve, learn more about the sport, and connect with serious players.
+        </p>
+        <div class="platform-link-row">Join the Community <span>→</span></div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── QUOTE ──────────────────────────────────────────────── -->
+  <section class="quote-break">
+    <span class="quote-mark">"</span>
+    <p class="quote-text">
+      MY MISSION IS BIGGER THAN MY OWN RESULTS. I'M HERE TO GROW THIS SPORT.
+    </p>
+    <p class="quote-attribution">— Roscoe Bellamy</p>
+  </section>
+
+  <!-- ── CTA ────────────────────────────────────────────────── -->
+  <section class="about-cta">
+    <p class="eyebrow" style="justify-content:center;">Join The Community</p>
+    <h2 class="section-title" style="font-size:clamp(48px,6vw,88px);margin-bottom:18px;">
+      READY TO LEVEL<br><span style="color:var(--blue-lt);">UP YOUR GAME?</span>
+    </h2>
+    <p class="about-cta-body">
+      Join The Pickleball Collective for live coaching, strategy breakdowns, and direct access to a Top 6 pro.
+    </p>
+    <div class="cta-button-row">
+      <a href="index.html#collective" class="btn-primary">Join The Collective</a>
+      <a href="partners.html" class="btn-ghost">Work With Roscoe</a>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('nav-hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    mobileNav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+  </script>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo" aria-label="Roscoe Bellamy"></div>
+      <nav class="footer-links">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@roscoebellamy" target="_blank">YouTube</a>
+        <a href="content.html">Podcast</a>
+        <a href="partners.html">Partners</a>
+        <a href="index.html#collective">The Collective</a>
+      </nav>
+      <p class="footer-copy">© 2026 Roscoe Bellamy. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
