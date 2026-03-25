@@ -178,7 +178,7 @@
     /* ── MOBILE ─────────────────────────────────────────── */
     @media (max-width: 768px) {
       .page-header { padding: 90px 24px 24px; }
-      .page-title { font-size: clamp(36px, 11vw, 56px) !important; }
+      .page-title { font-size: clamp(36px, 11vw, 56px) !important; text-align: center; }
 
       /* Stats bar: 2x2 grid */
       .stats-bar { grid-template-columns: 1fr 1fr; }
@@ -198,13 +198,17 @@
       }
       .partner-row.featured { padding-left: 21px; }
       .partner-row::after { font-size: 90px; }
+      .pr-left { align-items: center; text-align: center; }
       .pr-logo { max-height: 64px; max-width: 200px; }
-      .pr-desc { font-size: 14px; line-height: 1.8; }
+      .pr-desc { font-size: 14px; line-height: 1.8; text-align: center; }
       .pr-paddle {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 16px;
         padding: 18px 20px;
+        text-align: center;
+        width: 100%;
       }
       .pr-paddle .btn-ghost { width: 100%; text-align: center; }
 
@@ -250,7 +254,7 @@
       <li><a href="about.html">About</a></li>
       <li><a href="content.html">Content</a></li>
       <li><a href="partners.html" class="active">Partners</a></li>
-      <li><a href="index.html#collective" class="nav-cta">Join The Collective</a></li>
+      <li><a href="https://www.skool.com/the-pickleball-collective/about" target="_blank" class="nav-cta">Join The Collective</a></li>
     </ul>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -262,7 +266,7 @@
     <li><a href="about.html">About</a></li>
     <li><a href="content.html">Content</a></li>
     <li><a href="partners.html">Partners</a></li>
-    <li><a href="index.html#collective" class="nav-cta">Join The Collective</a></li>
+    <li><a href="https://www.skool.com/the-pickleball-collective/about" target="_blank" class="nav-cta">Join The Collective</a></li>
   </ul>
 
   <!-- PAGE HEADER -->
@@ -386,11 +390,12 @@
     <div class="footer-inner">
       <div class="footer-logo" aria-label="Roscoe Bellamy"></div>
       <nav class="footer-links">
-        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/roscoebellamy/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/roscoe.bellamy/" target="_blank">Facebook</a>
         <a href="https://www.youtube.com/@roscoebellamy" target="_blank">YouTube</a>
         <a href="content.html">Podcast</a>
         <a href="partners.html">Partners</a>
-        <a href="index.html#collective">The Collective</a>
+        <a href="https://www.skool.com/the-pickleball-collective/about" target="_blank">The Collective</a>
       </nav>
       <p class="footer-copy">© 2026 Roscoe Bellamy. All rights reserved.</p>
     </div>

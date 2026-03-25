@@ -788,11 +788,17 @@ img { display: block; max-width: 100%; }
     padding: 130px 24px 80px !important;
     justify-content: flex-end !important;
   }
-  .hero-headline { font-size: clamp(72px, 19vw, 110px) !important; }
-  .hero-eyebrow { white-space: normal !important; font-size: 9px !important; line-height: 1.6 !important; }
-  .hero-sub { font-size: 15px !important; max-width: 100% !important; margin-bottom: 32px !important; }
+  .hero-headline { font-size: clamp(72px, 19vw, 110px) !important; text-align: center; }
+  .hero-eyebrow { white-space: normal !important; font-size: 9px !important; line-height: 1.6 !important; justify-content: center; }
+  .hero-sub { font-size: 15px !important; max-width: 100% !important; margin-bottom: 32px !important; text-align: center; }
+  .hero-actions { justify-content: center; }
   .hero-actions .btn-primary { width: 100%; text-align: center; }
   .hero-scroll { display: none !important; }
+
+  /* HEADINGS — CENTER ON MOBILE */
+  .section-title { text-align: center; }
+  .eyebrow { justify-content: center; }
+  .display-title { text-align: center; }
 
   /* STATS BAR */
   .stats-bar { flex-wrap: wrap; }
@@ -835,7 +841,8 @@ img { display: block; max-width: 100%; }
   .partners-row { gap: 28px; }
 
   /* MEDIA STRIP */
-  .media-strip { padding: 20px 24px; gap: 16px; flex-direction: column; align-items: flex-start; }
+  .media-strip { padding: 20px 24px; gap: 16px; flex-direction: column; align-items: center; text-align: center; }
+  .media-strip-items { justify-content: center; }
   .media-divider { display: none; }
 
   /* EMAIL SIGNUP */
