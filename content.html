@@ -28,6 +28,27 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 
+  <!-- Podcast JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "The Pickleballers Podcast",
+    "url": "https://roscoebellamy.com/content.html",
+    "image": "https://roscoebellamy.com/og-image.jpg",
+    "description": "The #1 pickleball podcast in the world, hosted by World #6 pro Roscoe Bellamy. Guests include Andre Agassi, Drew Brees, Ben Johns, Terrell Owens, and Anna Leigh Waters.",
+    "author": {
+      "@type": "Person",
+      "name": "Roscoe Bellamy",
+      "url": "https://roscoebellamy.com"
+    },
+    "webFeed": "https://www.youtube.com/@roscoebellamy",
+    "genre": ["Sports", "Pickleball", "Fitness"],
+    "inLanguage": "en"
+  }
+  </script>
+
+  <link rel="dns-prefetch" href="https://img.youtube.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -144,7 +165,7 @@
       justify-content: center;
     }
     .yt-thumb-placeholder svg { stroke: var(--border2); }
-    /* For real thumbnails: <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" /> */
+    /* For real thumbnails: <img loading="lazy" src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" /> */
     .yt-thumb img {
       width: 100%;
       height: 100%;
@@ -511,7 +532,7 @@
         <!-- FEATURED -->
         <a href="https://www.youtube.com/watch?v=0PsdiZR5DVw" target="_blank" rel="noopener" class="yt-card yt-featured">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/0PsdiZR5DVw/maxresdefault.jpg" alt="The #1 Attacking Shot in Pickleball" />
+            <img loading="lazy" src="https://img.youtube.com/vi/0PsdiZR5DVw/maxresdefault.jpg" alt="The #1 Attacking Shot in Pickleball" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -523,7 +544,7 @@
         <!-- CARD 1 -->
         <a href="https://www.youtube.com/watch?v=fCDI00MlNjg" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/fCDI00MlNjg/hqdefault.jpg" alt="The 3 Hardest Pickleball Serves to Return" />
+            <img loading="lazy" src="https://img.youtube.com/vi/fCDI00MlNjg/hqdefault.jpg" alt="The 3 Hardest Pickleball Serves to Return" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -535,7 +556,7 @@
         <!-- CARD 2 -->
         <a href="https://www.youtube.com/watch?v=gQ6lbSJiLFs" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/gQ6lbSJiLFs/hqdefault.jpg" alt="The #1 Pickleball Skill That Will Make You Win" />
+            <img loading="lazy" src="https://img.youtube.com/vi/gQ6lbSJiLFs/hqdefault.jpg" alt="The #1 Pickleball Skill That Will Make You Win" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -547,7 +568,7 @@
         <!-- CARD 3 -->
         <a href="https://www.youtube.com/watch?v=iNf26yeqnbU" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/iNf26yeqnbU/hqdefault.jpg" alt="I Coached Him to a 5.0 in LESS Than 32 Minutes" />
+            <img loading="lazy" src="https://img.youtube.com/vi/iNf26yeqnbU/hqdefault.jpg" alt="I Coached Him to a 5.0 in LESS Than 32 Minutes" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -559,7 +580,7 @@
         <!-- CARD 4 -->
         <a href="https://www.youtube.com/watch?v=QapLkWFz8Mk" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/QapLkWFz8Mk/hqdefault.jpg" alt="The Real Secret to FAST HANDS in Pickleball" />
+            <img loading="lazy" src="https://img.youtube.com/vi/QapLkWFz8Mk/hqdefault.jpg" alt="The Real Secret to FAST HANDS in Pickleball" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -571,7 +592,7 @@
         <!-- CARD 5 -->
         <a href="https://www.youtube.com/watch?v=w_uQ5N90z3E" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/w_uQ5N90z3E/hqdefault.jpg" alt="10X Your Pickleball Progress" />
+            <img loading="lazy" src="https://img.youtube.com/vi/w_uQ5N90z3E/hqdefault.jpg" alt="10X Your Pickleball Progress" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -583,7 +604,7 @@
         <!-- CARD 6 -->
         <a href="https://www.youtube.com/watch?v=YcJVqh2Z1pE" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/YcJVqh2Z1pE/hqdefault.jpg" alt="5 Pickleball Strategies That Beat 98% of Players" />
+            <img loading="lazy" src="https://img.youtube.com/vi/YcJVqh2Z1pE/hqdefault.jpg" alt="5 Pickleball Strategies That Beat 98% of Players" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -608,7 +629,7 @@
         <!-- FEATURED -->
         <a href="https://www.youtube.com/watch?v=9wklRjjipTA" target="_blank" rel="noopener" class="yt-card yt-featured">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/9wklRjjipTA/maxresdefault.jpg" alt="Andre Agassi: How Pickleball Changed His Life" />
+            <img loading="lazy" src="https://img.youtube.com/vi/9wklRjjipTA/maxresdefault.jpg" alt="Andre Agassi: How Pickleball Changed His Life" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -620,7 +641,7 @@
         <!-- CARD 1 -->
         <a href="https://www.youtube.com/watch?v=pQ4m8sPNYm0" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/pQ4m8sPNYm0/hqdefault.jpg" alt="Ben Johns" />
+            <img loading="lazy" src="https://img.youtube.com/vi/pQ4m8sPNYm0/hqdefault.jpg" alt="Ben Johns" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -632,7 +653,7 @@
         <!-- CARD 2 -->
         <a href="https://www.youtube.com/watch?v=xxg741fHJNk" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/xxg741fHJNk/hqdefault.jpg" alt="Anna Leigh Waters" />
+            <img loading="lazy" src="https://img.youtube.com/vi/xxg741fHJNk/hqdefault.jpg" alt="Anna Leigh Waters" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -644,7 +665,7 @@
         <!-- CARD 3 -->
         <a href="https://www.youtube.com/watch?v=BpZRjmeqjw8" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/BpZRjmeqjw8/hqdefault.jpg" alt="Drew Brees" />
+            <img loading="lazy" src="https://img.youtube.com/vi/BpZRjmeqjw8/hqdefault.jpg" alt="Drew Brees" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -656,7 +677,7 @@
         <!-- CARD 4 -->
         <a href="https://www.youtube.com/watch?v=p0Z1CtVc1zo" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/p0Z1CtVc1zo/hqdefault.jpg" alt="Terrell Owens" />
+            <img loading="lazy" src="https://img.youtube.com/vi/p0Z1CtVc1zo/hqdefault.jpg" alt="Terrell Owens" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -668,7 +689,7 @@
         <!-- CARD 5 -->
         <a href="https://www.youtube.com/watch?v=cUyIug1F9y4" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/cUyIug1F9y4/hqdefault.jpg" alt="Maroon 5's James Valentine" />
+            <img loading="lazy" src="https://img.youtube.com/vi/cUyIug1F9y4/hqdefault.jpg" alt="Maroon 5's James Valentine" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">
@@ -680,7 +701,7 @@
         <!-- CARD 6 -->
         <a href="https://www.youtube.com/watch?v=bFTkz7SfQd4" target="_blank" rel="noopener" class="yt-card">
           <div class="yt-thumb">
-            <img src="https://img.youtube.com/vi/bFTkz7SfQd4/hqdefault.jpg" alt="Whole Foods Founder" />
+            <img loading="lazy" src="https://img.youtube.com/vi/bFTkz7SfQd4/hqdefault.jpg" alt="Whole Foods Founder" />
             <div class="yt-play"><div class="yt-play-btn"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div></div>
           </div>
           <div class="yt-meta">

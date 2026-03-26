@@ -50,6 +50,7 @@
   }
   </script>
 
+  <link rel="dns-prefetch" href="https://img.youtube.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -83,8 +84,9 @@
   <section class="hero">
     <div class="hero-photo">
       <img
-        src="New Hero shot.JPG"
+        src="roscoe-bellamy-hero.jpg"
         alt="Roscoe Bellamy — PPA Tour Professional"
+        fetchpriority="high"
       />
     </div>
     <div class="hero-overlay"></div>
@@ -132,8 +134,9 @@
     </div>
     <div class="collective-image">
       <img
-        src="Copy%20of%20TPC%20About%20Page%20(1400x790)%20(1600%20x%20900%20px)-3.png"
+        src="pickleball-collective.png"
         alt="The Pickleball Collective — Roscoe Bellamy"
+        loading="lazy"
       />
     </div>
   </section>
@@ -143,7 +146,7 @@
     <p class="eyebrow">Partners &amp; Sponsors</p>
     <div class="partners-row">
       <div class="partner-item">
-        <img src="alignment-white.png" alt="Alignment Healthcare" />
+        <img src="alignment-white.png" alt="Alignment Healthcare" loading="lazy" />
       </div>
       <div class="partner-item">
         <span class="partner-name">DOORDASH</span>
@@ -159,13 +162,13 @@
   <section class="about" id="about">
     <div class="about-photos">
       <div class="about-photo about-photo--tall">
-        <img src="Trophy.JPG" alt="Roscoe Bellamy with PPA trophy" />
+        <img src="roscoe-bellamy-trophy.jpg" alt="Roscoe Bellamy with PPA trophy" loading="lazy" />
       </div>
       <div class="about-photo about-photo--short">
-        <img src="Pumpoed up.JPG" alt="Roscoe Bellamy fist pump" />
+        <img src="roscoe-bellamy-fistpump.jpg" alt="Roscoe Bellamy fist pump" loading="lazy" />
       </div>
       <div class="about-photo about-photo--short">
-        <img src="DSCF6666.JPG" alt="Roscoe Bellamy with monkey" />
+        <img src="roscoe-bellamy-lifestyle.jpg" alt="Roscoe Bellamy with monkey" loading="lazy" />
       </div>
     </div>
     <div class="about-text">
@@ -222,21 +225,21 @@
       <div class="scroll-track-wrap">
         <div class="scroll-track scroll-to-left" id="podcast-track">
           <!-- Cards duplicated for seamless loop -->
-          <a href="https://www.youtube.com/watch?v=9wklRjjipTA" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/9wklRjjipTA/hqdefault.jpg" alt="Andre Agassi"/></div><div class="scroll-card-title">Andre Agassi: How Pickleball Changed His Life</div></a>
-          <a href="https://www.youtube.com/watch?v=xxg741fHJNk" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/xxg741fHJNk/hqdefault.jpg" alt="Anna Leigh Waters"/></div><div class="scroll-card-title">Anna Leigh Waters & Her Unfiltered Truth About Being #1</div></a>
-          <a href="https://www.youtube.com/watch?v=BpZRjmeqjw8" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/BpZRjmeqjw8/hqdefault.jpg" alt="Drew Brees"/></div><div class="scroll-card-title">Drew Brees & His Stories of Adversity & Mental Toughness</div></a>
-          <a href="https://www.youtube.com/watch?v=pQ4m8sPNYm0" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/pQ4m8sPNYm0/hqdefault.jpg" alt="Ben Johns"/></div><div class="scroll-card-title">Ben Johns: Life As the Greatest Pickleball Player on Earth</div></a>
-          <a href="https://www.youtube.com/watch?v=p0Z1CtVc1zo" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/p0Z1CtVc1zo/hqdefault.jpg" alt="Terrell Owens"/></div><div class="scroll-card-title">Terrell Owens: From NFL Hall of Famer to Chasing Pro Pickleball</div></a>
-          <a href="https://www.youtube.com/watch?v=cUyIug1F9y4" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/cUyIug1F9y4/hqdefault.jpg" alt="James Valentine"/></div><div class="scroll-card-title">Maroon 5's James Valentine: Building the World's Biggest Band</div></a>
-          <a href="https://www.youtube.com/watch?v=bFTkz7SfQd4" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/bFTkz7SfQd4/hqdefault.jpg" alt="Whole Foods"/></div><div class="scroll-card-title">Whole Foods Founder Now Obsessed With Pickleball</div></a>
+          <a href="https://www.youtube.com/watch?v=9wklRjjipTA" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/9wklRjjipTA/hqdefault.jpg" alt="Andre Agassi"/></div><div class="scroll-card-title">Andre Agassi: How Pickleball Changed His Life</div></a>
+          <a href="https://www.youtube.com/watch?v=xxg741fHJNk" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/xxg741fHJNk/hqdefault.jpg" alt="Anna Leigh Waters"/></div><div class="scroll-card-title">Anna Leigh Waters & Her Unfiltered Truth About Being #1</div></a>
+          <a href="https://www.youtube.com/watch?v=BpZRjmeqjw8" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/BpZRjmeqjw8/hqdefault.jpg" alt="Drew Brees"/></div><div class="scroll-card-title">Drew Brees & His Stories of Adversity & Mental Toughness</div></a>
+          <a href="https://www.youtube.com/watch?v=pQ4m8sPNYm0" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/pQ4m8sPNYm0/hqdefault.jpg" alt="Ben Johns"/></div><div class="scroll-card-title">Ben Johns: Life As the Greatest Pickleball Player on Earth</div></a>
+          <a href="https://www.youtube.com/watch?v=p0Z1CtVc1zo" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/p0Z1CtVc1zo/hqdefault.jpg" alt="Terrell Owens"/></div><div class="scroll-card-title">Terrell Owens: From NFL Hall of Famer to Chasing Pro Pickleball</div></a>
+          <a href="https://www.youtube.com/watch?v=cUyIug1F9y4" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/cUyIug1F9y4/hqdefault.jpg" alt="James Valentine"/></div><div class="scroll-card-title">Maroon 5's James Valentine: Building the World's Biggest Band</div></a>
+          <a href="https://www.youtube.com/watch?v=bFTkz7SfQd4" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/bFTkz7SfQd4/hqdefault.jpg" alt="Whole Foods"/></div><div class="scroll-card-title">Whole Foods Founder Now Obsessed With Pickleball</div></a>
           <!-- Duplicate set for seamless loop -->
-          <a href="https://www.youtube.com/watch?v=9wklRjjipTA" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/9wklRjjipTA/hqdefault.jpg" alt="Andre Agassi"/></div><div class="scroll-card-title">Andre Agassi: How Pickleball Changed His Life</div></a>
-          <a href="https://www.youtube.com/watch?v=xxg741fHJNk" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/xxg741fHJNk/hqdefault.jpg" alt="Anna Leigh Waters"/></div><div class="scroll-card-title">Anna Leigh Waters & Her Unfiltered Truth About Being #1</div></a>
-          <a href="https://www.youtube.com/watch?v=BpZRjmeqjw8" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/BpZRjmeqjw8/hqdefault.jpg" alt="Drew Brees"/></div><div class="scroll-card-title">Drew Brees & His Stories of Adversity & Mental Toughness</div></a>
-          <a href="https://www.youtube.com/watch?v=pQ4m8sPNYm0" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/pQ4m8sPNYm0/hqdefault.jpg" alt="Ben Johns"/></div><div class="scroll-card-title">Ben Johns: Life As the Greatest Pickleball Player on Earth</div></a>
-          <a href="https://www.youtube.com/watch?v=p0Z1CtVc1zo" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/p0Z1CtVc1zo/hqdefault.jpg" alt="Terrell Owens"/></div><div class="scroll-card-title">Terrell Owens: From NFL Hall of Famer to Chasing Pro Pickleball</div></a>
-          <a href="https://www.youtube.com/watch?v=cUyIug1F9y4" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/cUyIug1F9y4/hqdefault.jpg" alt="James Valentine"/></div><div class="scroll-card-title">Maroon 5's James Valentine: Building the World's Biggest Band</div></a>
-          <a href="https://www.youtube.com/watch?v=bFTkz7SfQd4" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/bFTkz7SfQd4/hqdefault.jpg" alt="Whole Foods"/></div><div class="scroll-card-title">Whole Foods Founder Now Obsessed With Pickleball</div></a>
+          <a href="https://www.youtube.com/watch?v=9wklRjjipTA" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/9wklRjjipTA/hqdefault.jpg" alt="Andre Agassi"/></div><div class="scroll-card-title">Andre Agassi: How Pickleball Changed His Life</div></a>
+          <a href="https://www.youtube.com/watch?v=xxg741fHJNk" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/xxg741fHJNk/hqdefault.jpg" alt="Anna Leigh Waters"/></div><div class="scroll-card-title">Anna Leigh Waters & Her Unfiltered Truth About Being #1</div></a>
+          <a href="https://www.youtube.com/watch?v=BpZRjmeqjw8" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/BpZRjmeqjw8/hqdefault.jpg" alt="Drew Brees"/></div><div class="scroll-card-title">Drew Brees & His Stories of Adversity & Mental Toughness</div></a>
+          <a href="https://www.youtube.com/watch?v=pQ4m8sPNYm0" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/pQ4m8sPNYm0/hqdefault.jpg" alt="Ben Johns"/></div><div class="scroll-card-title">Ben Johns: Life As the Greatest Pickleball Player on Earth</div></a>
+          <a href="https://www.youtube.com/watch?v=p0Z1CtVc1zo" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/p0Z1CtVc1zo/hqdefault.jpg" alt="Terrell Owens"/></div><div class="scroll-card-title">Terrell Owens: From NFL Hall of Famer to Chasing Pro Pickleball</div></a>
+          <a href="https://www.youtube.com/watch?v=cUyIug1F9y4" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/cUyIug1F9y4/hqdefault.jpg" alt="James Valentine"/></div><div class="scroll-card-title">Maroon 5's James Valentine: Building the World's Biggest Band</div></a>
+          <a href="https://www.youtube.com/watch?v=bFTkz7SfQd4" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/bFTkz7SfQd4/hqdefault.jpg" alt="Whole Foods"/></div><div class="scroll-card-title">Whole Foods Founder Now Obsessed With Pickleball</div></a>
         </div>
       </div>
     </div>
@@ -252,21 +255,21 @@
       </div>
       <div class="scroll-track-wrap">
         <div class="scroll-track scroll-to-right" id="yt-track">
-          <a href="https://www.youtube.com/watch?v=0PsdiZR5DVw" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/0PsdiZR5DVw/hqdefault.jpg" alt="Attacking Shot"/></div><div class="scroll-card-title">The #1 Attacking Shot in Pickleball</div></a>
-          <a href="https://www.youtube.com/watch?v=fCDI00MlNjg" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/fCDI00MlNjg/hqdefault.jpg" alt="Hardest Serves"/></div><div class="scroll-card-title">The 3 Hardest Pickleball Serves to Return</div></a>
-          <a href="https://www.youtube.com/watch?v=gQ6lbSJiLFs" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/gQ6lbSJiLFs/hqdefault.jpg" alt="Pickleball Skill"/></div><div class="scroll-card-title">The #1 Pickleball Skill That Will Make You Win</div></a>
-          <a href="https://www.youtube.com/watch?v=iNf26yeqnbU" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/iNf26yeqnbU/hqdefault.jpg" alt="Coached to 5.0"/></div><div class="scroll-card-title">I Coached Him to a 5.0 in Less Than 32 Minutes</div></a>
-          <a href="https://www.youtube.com/watch?v=QapLkWFz8Mk" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/QapLkWFz8Mk/hqdefault.jpg" alt="Fast Hands"/></div><div class="scroll-card-title">The Real Secret to FAST HANDS in Pickleball</div></a>
-          <a href="https://www.youtube.com/watch?v=w_uQ5N90z3E" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/w_uQ5N90z3E/hqdefault.jpg" alt="10X Progress"/></div><div class="scroll-card-title">10X Your Pickleball Progress with This Pro-Level Routine</div></a>
-          <a href="https://www.youtube.com/watch?v=YcJVqh2Z1pE" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/YcJVqh2Z1pE/hqdefault.jpg" alt="5 Strategies"/></div><div class="scroll-card-title">5 Pickleball Strategies That Beat 98% of Players</div></a>
+          <a href="https://www.youtube.com/watch?v=0PsdiZR5DVw" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/0PsdiZR5DVw/hqdefault.jpg" alt="Attacking Shot"/></div><div class="scroll-card-title">The #1 Attacking Shot in Pickleball</div></a>
+          <a href="https://www.youtube.com/watch?v=fCDI00MlNjg" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/fCDI00MlNjg/hqdefault.jpg" alt="Hardest Serves"/></div><div class="scroll-card-title">The 3 Hardest Pickleball Serves to Return</div></a>
+          <a href="https://www.youtube.com/watch?v=gQ6lbSJiLFs" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/gQ6lbSJiLFs/hqdefault.jpg" alt="Pickleball Skill"/></div><div class="scroll-card-title">The #1 Pickleball Skill That Will Make You Win</div></a>
+          <a href="https://www.youtube.com/watch?v=iNf26yeqnbU" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/iNf26yeqnbU/hqdefault.jpg" alt="Coached to 5.0"/></div><div class="scroll-card-title">I Coached Him to a 5.0 in Less Than 32 Minutes</div></a>
+          <a href="https://www.youtube.com/watch?v=QapLkWFz8Mk" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/QapLkWFz8Mk/hqdefault.jpg" alt="Fast Hands"/></div><div class="scroll-card-title">The Real Secret to FAST HANDS in Pickleball</div></a>
+          <a href="https://www.youtube.com/watch?v=w_uQ5N90z3E" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/w_uQ5N90z3E/hqdefault.jpg" alt="10X Progress"/></div><div class="scroll-card-title">10X Your Pickleball Progress with This Pro-Level Routine</div></a>
+          <a href="https://www.youtube.com/watch?v=YcJVqh2Z1pE" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/YcJVqh2Z1pE/hqdefault.jpg" alt="5 Strategies"/></div><div class="scroll-card-title">5 Pickleball Strategies That Beat 98% of Players</div></a>
           <!-- Duplicate set for seamless loop -->
-          <a href="https://www.youtube.com/watch?v=0PsdiZR5DVw" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/0PsdiZR5DVw/hqdefault.jpg" alt="Attacking Shot"/></div><div class="scroll-card-title">The #1 Attacking Shot in Pickleball</div></a>
-          <a href="https://www.youtube.com/watch?v=fCDI00MlNjg" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/fCDI00MlNjg/hqdefault.jpg" alt="Hardest Serves"/></div><div class="scroll-card-title">The 3 Hardest Pickleball Serves to Return</div></a>
-          <a href="https://www.youtube.com/watch?v=gQ6lbSJiLFs" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/gQ6lbSJiLFs/hqdefault.jpg" alt="Pickleball Skill"/></div><div class="scroll-card-title">The #1 Pickleball Skill That Will Make You Win</div></a>
-          <a href="https://www.youtube.com/watch?v=iNf26yeqnbU" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/iNf26yeqnbU/hqdefault.jpg" alt="Coached to 5.0"/></div><div class="scroll-card-title">I Coached Him to a 5.0 in Less Than 32 Minutes</div></a>
-          <a href="https://www.youtube.com/watch?v=QapLkWFz8Mk" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/QapLkWFz8Mk/hqdefault.jpg" alt="Fast Hands"/></div><div class="scroll-card-title">The Real Secret to FAST HANDS in Pickleball</div></a>
-          <a href="https://www.youtube.com/watch?v=w_uQ5N90z3E" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/w_uQ5N90z3E/hqdefault.jpg" alt="10X Progress"/></div><div class="scroll-card-title">10X Your Pickleball Progress with This Pro-Level Routine</div></a>
-          <a href="https://www.youtube.com/watch?v=YcJVqh2Z1pE" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img src="https://img.youtube.com/vi/YcJVqh2Z1pE/hqdefault.jpg" alt="5 Strategies"/></div><div class="scroll-card-title">5 Pickleball Strategies That Beat 98% of Players</div></a>
+          <a href="https://www.youtube.com/watch?v=0PsdiZR5DVw" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/0PsdiZR5DVw/hqdefault.jpg" alt="Attacking Shot"/></div><div class="scroll-card-title">The #1 Attacking Shot in Pickleball</div></a>
+          <a href="https://www.youtube.com/watch?v=fCDI00MlNjg" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/fCDI00MlNjg/hqdefault.jpg" alt="Hardest Serves"/></div><div class="scroll-card-title">The 3 Hardest Pickleball Serves to Return</div></a>
+          <a href="https://www.youtube.com/watch?v=gQ6lbSJiLFs" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/gQ6lbSJiLFs/hqdefault.jpg" alt="Pickleball Skill"/></div><div class="scroll-card-title">The #1 Pickleball Skill That Will Make You Win</div></a>
+          <a href="https://www.youtube.com/watch?v=iNf26yeqnbU" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/iNf26yeqnbU/hqdefault.jpg" alt="Coached to 5.0"/></div><div class="scroll-card-title">I Coached Him to a 5.0 in Less Than 32 Minutes</div></a>
+          <a href="https://www.youtube.com/watch?v=QapLkWFz8Mk" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/QapLkWFz8Mk/hqdefault.jpg" alt="Fast Hands"/></div><div class="scroll-card-title">The Real Secret to FAST HANDS in Pickleball</div></a>
+          <a href="https://www.youtube.com/watch?v=w_uQ5N90z3E" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/w_uQ5N90z3E/hqdefault.jpg" alt="10X Progress"/></div><div class="scroll-card-title">10X Your Pickleball Progress with This Pro-Level Routine</div></a>
+          <a href="https://www.youtube.com/watch?v=YcJVqh2Z1pE" target="_blank" rel="noopener" class="scroll-card"><div class="scroll-card-thumb"><img loading="lazy" src="https://img.youtube.com/vi/YcJVqh2Z1pE/hqdefault.jpg" alt="5 Strategies"/></div><div class="scroll-card-title">5 Pickleball Strategies That Beat 98% of Players</div></a>
         </div>
       </div>
     </div>
@@ -278,9 +281,9 @@
     <div class="footer-inner">
       <div class="footer-logo" aria-label="Roscoe Bellamy"></div>
       <nav class="footer-links">
-        <a href="https://www.instagram.com/roscoebellamy/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/roscoe.bellamy/" target="_blank">Facebook</a>
-        <a href="https://youtube.com" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/roscoebellamy/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/roscoe.bellamy/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://youtube.com/@roscoebellamy" target="_blank" rel="noopener noreferrer">YouTube</a>
         <a href="content.html">Podcast</a>
         <a href="partners.html">Partners</a>
         <a href="https://www.skool.com/the-pickleball-collective/about" target="_blank">The Collective</a>
