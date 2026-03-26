@@ -191,6 +191,7 @@ img { display: block; max-width: 100%; }
   flex-direction: column;
   justify-content: center;
 }
+.eyebrow-break { display: none; }
 .hero-eyebrow {
   display: flex;
   align-items: center;
@@ -357,6 +358,34 @@ img { display: block; max-width: 100%; }
   font-family: var(--font-display);
   font-size: 30px;
   letter-spacing: .14em;
+  color: var(--white);
+}
+
+/* ── NEWSLETTER BANNER ───────────────────────────────────── */
+.newsletter-banner {
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 20px 48px;
+  flex-wrap: wrap;
+}
+.newsletter-banner-text {
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+.newsletter-banner-btn {
+  white-space: nowrap;
+  background: var(--white);
+  color: var(--blue);
+  flex-shrink: 0;
+}
+.newsletter-banner-btn:hover {
+  background: var(--bg);
   color: var(--white);
 }
 
@@ -753,7 +782,9 @@ img { display: block; max-width: 100%; }
     justify-content: flex-end !important;
   }
   .hero-headline { font-size: clamp(72px, 19vw, 110px) !important; text-align: center; }
-  .hero-eyebrow { white-space: normal !important; font-size: 9px !important; line-height: 1.6 !important; justify-content: center; }
+  .hero-eyebrow { display: block !important; white-space: normal !important; font-size: 9px !important; line-height: 2 !important; text-align: center; }
+  .hero-eyebrow::before { display: none !important; }
+  .eyebrow-break { display: none; }
   .hero-sub { font-size: 15px !important; max-width: 100% !important; margin-bottom: 32px !important; text-align: center; }
   .hero-actions { justify-content: center; }
   .hero-actions .btn-primary { width: 100%; text-align: center; }
@@ -786,6 +817,10 @@ img { display: block; max-width: 100%; }
   .about-photos { grid-template-columns: 1fr 1fr; }
   .about-photo--tall { height: 260px; }
   .about-photo--short { height: 124px; }
+  .about-text { text-align: center; align-items: center; }
+  .about-text .btn-primary,
+  .about-text .btn-ghost { width: 100%; text-align: center; }
+  .about-text > div[style] { width: 100%; flex-direction: column; gap: 12px !important; }
 
   /* COLLECTIVE */
   .collective {
@@ -798,16 +833,22 @@ img { display: block; max-width: 100%; }
   /* CONTENT FEATURES */
   .content-features { padding: 60px 24px; }
   .content-grid { grid-template-columns: 1fr; }
-  .content-card { padding: 36px 24px; }
+  .content-card { padding: 36px 24px; text-align: center; align-items: center; }
+  .content-card .card-stats { justify-content: center; }
+  .content-card .card-link { align-self: center; }
 
   /* PARTNERS STRIP */
   .partners { padding: 40px 24px; }
-  .partners-row { gap: 28px; }
+  .partners-row { gap: 28px; justify-content: center; }
 
   /* MEDIA STRIP */
   .media-strip { padding: 20px 24px; gap: 16px; flex-direction: column; align-items: center; text-align: center; }
   .media-strip-items { justify-content: center; }
   .media-divider { display: none; }
+
+  /* NEWSLETTER BANNER */
+  .newsletter-banner { flex-direction: column; gap: 16px; padding: 24px; text-align: center; }
+  .newsletter-banner-btn { width: 100%; text-align: center; }
 
   /* EMAIL SIGNUP */
   .email-signup { padding: 60px 24px; }
@@ -822,6 +863,32 @@ img { display: block; max-width: 100%; }
 
   /* DISPLAY TITLE utility */
   .display-title { font-size: clamp(36px, 10vw, 56px) !important; }
+
+  /* SCROLL ROWS */
+  .scroll-row-header { padding: 0 20px; }
+  .scroll-track { padding: 4px 20px; }
+
+  /* PARTNERS PAGE STATS */
+  .partners-stats { grid-template-columns: 1fr 1fr; }
+  .partner-stat-label { font-size: 9px; line-height: 1.4; }
+
+  /* ABOUT PAGE BADGES */
+  .hero-badges { flex-direction: column; align-items: center; gap: 10px; }
+  .hero-badge { text-align: center; justify-content: center; }
+
+  /* ABOUT PAGE BIO SPLITS */
+  .bio-split { grid-template-columns: 1fr !important; height: auto !important; overflow: visible !important; }
+  .bio-text { padding: 44px 24px !important; border-right: none !important; border-left: none !important; text-align: center !important; align-items: center !important; }
+  .bio-photo { height: 300px !important; order: 1 !important; }
+  .bio-split.reverse .bio-text { order: 2 !important; }
+  .bio-split.reverse .bio-photo { order: 1 !important; }
+
+  /* ABOUT PAGE PLATFORM CARDS */
+  .platform-card { text-align: center; align-items: center; }
+  .platform-stats { justify-content: center; }
+
+  /* CONTENT PAGE TABS */
+  .content-tabs { justify-content: center; }
 
 }
 

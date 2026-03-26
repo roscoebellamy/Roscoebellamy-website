@@ -326,8 +326,11 @@
 
       .about-hero { min-height: 100svh; }
       .about-hero-bg img { object-position: 60% 15%; }
-      .about-hero-content { padding: 0 24px 64px; max-width: 100%; }
-      .about-hero-name { font-size: clamp(64px, 18vw, 96px); }
+      .about-hero-content { padding: 0 24px 64px; max-width: 100%; align-items: center; text-align: center; }
+      .about-hero-eyebrow { justify-content: center; text-align: center; }
+      .about-hero-name { font-size: clamp(64px, 18vw, 96px); text-align: center; }
+      .about-hero-pills { justify-content: center; flex-direction: column; align-items: center; gap: 10px; }
+      .about-hero-pills > * { width: 100%; text-align: center; justify-content: center; }
 
       .about-stats { grid-template-columns: repeat(2, 1fr); }
       .about-stat { padding: 28px 16px; }
