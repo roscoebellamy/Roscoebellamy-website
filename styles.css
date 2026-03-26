@@ -828,6 +828,15 @@ img { display: block; max-width: 100%; }
     padding: 60px 24px;
     gap: 44px;
   }
+  .collective-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .collective-features { align-items: center; }
+  .collective-features li { text-align: left; }
+  .collective-text .btn-primary { align-self: center; }
   .collective-image { max-height: 300px; overflow: hidden; }
 
   /* CONTENT FEATURES */
